@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bind"
+        android:layout_alignBottom="@+id/bind"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="88dp"
+        android:text="解绑" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/unbind"
+        android:text="开启音乐播放" />
+
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/end"
+        android:layout_marginTop="22dp"
+        android:text="绑定Service" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="16dp"
+        android:text="停止音乐播放服务" />
+
+    
+
+    <Button
+        android:id="@+id/denglu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="86dp"
+        android:layout_marginLeft="21dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/denglu"
+        android:layout_alignBottom="@+id/denglu"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/end"
+        android:text="注册去" />
+
+    <Button
+        android:id="@+id/tuichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sign"
+        android:layout_centerHorizontal="true"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/broad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:layout_toLeftOf="@+id/tuichu"
+        android:text="广播进行播放音乐" />
+
+    <Button
+        android:id="@+id/shut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/broad"
+        android:layout_alignLeft="@+id/unbind"
+        android:text="广播进行取消播放音乐" />
+
+    <TextView
+        android:id="@+id/mtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bind"
+        android:layout_toLeftOf="@+id/unbind"
+        android:text="时间显示" />
+
+    <Button
+        android:id="@+id/kaishi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/denglu"
+        android:layout_below="@+id/mtime"
+        android:text="广播开始（下载图片）" />
+
+    <Button
+        android:id="@+id/tingzhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/denglu"
+        android:layout_alignRight="@+id/unbind"
+        android:layout_marginBottom="16dp"
+        android:text="广播开始（下载图片，支持断点下载）" />
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/start"
+        android:layout_alignRight="@+id/sign"
+        android:text="电量显示" />
+
+</RelativeLayout>

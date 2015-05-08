@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/download_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:text="断点下载" />
+
+    <EditText 
+		android:id="@+id/path" 
+		android:text="http://hiphotos.baidu.com/735216726/pic/item/2488f146f7ea415e72f05d75.jpg" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+	</EditText>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/download_two"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="50dp"
+        android:text="进度" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/path"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="登陆失败" />
+
+</RelativeLayout>
